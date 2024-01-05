@@ -1,0 +1,202 @@
+
+{
+
+    "intents": [
+      {"tag": "greeting",
+        "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello"],
+        "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?", "Whats up? Need any help?"]
+      },
+      {"tag": "Bland Question",
+      "patterns": ["Do you know the answer to this?", "What do you know?", "Answer my question", "Hey there", "So do you know what happened"],
+      "responses": ["I am unsure how to answer that", "Your questions seems bland, please provide more context", "I cannot answer that", "My knowledge limits me to only space.", "Please rephrase your question in simple words."]
+    },
+    {"tag": "Bland Answers",
+    "patterns": ["Did you know that", "No, the answer is", "Ill tell you the answer", "the answer is", "this is what happened"],
+    "responses": ["You ask the questions, I will answer them.", "No I didn't know that.", "Is that true! Consult with the site owner so that he could add that to my code", "Im sorry, I can only respond to questions which I understand", "I'm afraid I didn't know that. PLease ask other questions, I may have the answer to them!  "]
+  },
+
+      {"tag": "function",
+      "patterns": ["What do you do?", "What can you do", "How will you help me?", "I don't know", "What does this site do", "how do you work"],
+      "responses": ["I am an AI chatbot who uses python to function. Ask me anything about space and I can answer you!", "I am an AI chatbot who answers questions about space", "I can help educate you with the mysteries of space. Just try, ask any question about the universe!"]
+    },
+    {"tag": "Deny",
+      "patterns": ["That is wrong", "Incorrect", "That is false", "Wrong answer", "You didn't answer my question", "No answer my question about", "No", "What are you saying", "You are not answering my question"],
+      "responses": ["Sorry, If I didn't answer your question, please rephrase it in simple words so I can answer.", "Try again, this time with different words.","I'm sorry, please consult with the owner of this site so that he can fix this error"]
+    },
+    {"tag": "Agree",
+    "patterns": ["That is true", "How did you know!", "That is correct", "Correct answer", "That is all I needed", "You answered my question", "Thanks", "Thanks a lot"],
+    "responses": ["Glad to help! Any other questions?.", "Your welcome :)","Like I told you, I know everything about space ;)", "Your welcome, any other questions?"]
+  },
+  {"tag": "Unknown",
+  "patterns": [""],
+  "responses": ["I'm afraid I don't know the answer to that question. Please consult with the site owner.", "Either my code hasn't detected you have wrote anything, or I just don't understand the complexity of your question", "Could your repeat that in similar words? My code hasn't picked up anything"]
+},
+ {"tag": "Rephrase",
+"patterns": ["Can your rephrase that","Can you repeat it?", "Answer it in other words", "repeat it again", "Say it in simpler words","Another one", "Say something else about", "Rephrase in simpler words"],
+"responses": ["I'm sorry, but my code limits me from doing that", "I am unable to do that, my code restricts me from doing so", "I cannot do that due to the limited amount of responses I have"]
+},
+{"tag": "Bye",
+"patterns": ["Thank you", "Bye", "That is all", "Thank you","cya", "goodbye", "talk to you later"],
+"responses": ["Thanks for talking with me", "Bye bye!", "See you later", "Pleasure helping you", "Your welcome!"]
+},
+
+{"tag": "Earth fun facts!",
+"patterns": ["Tell me a fun fact about Earth", "Cool facts about Earth", "Can you tell me a fact about earth", "Tell me something cool about Earth","Anything you know cool about Earth", "Fun facts about the Earth", "Tell me a ranodm fact about the Earth", "More fun facts about the Earth", "Tell me something else more cool about the Earth", "What other cool facts you know about the Earth"],
+"responses": ["Earth is the only known planet in our solar system that sustains life.",
+"The highest point on Earth is Mount Everest, and the deepest point is the Challenger Deep in the Mariana Trench.",
+"Earth's atmosphere is composed of about 78% nitrogen, 21% oxygen, and trace amounts of other gases.",
+"The Earth's rotation is gradually slowing down due to the Moon's gravitational pull, adding leap seconds periodically.",
+"The Great Barrier Reef, visible from space, is the largest living structure on Earth.",
+"Earth has a magnetic field that protects it from the solar wind and cosmic rays.",
+"The planet has a diverse range of ecosystems, from rainforests to deserts, supporting a variety of plant and animal life.",
+"The Earth's core is primarily composed of iron and nickel, generating a magnetic field through geodynamo processes.",
+"It takes approximately 365.25 days for Earth to complete one orbit around the Sun, leading to the creation of leap years.",
+"Earth has a unique feature called the Goldilocks Zone, where conditions are just right for liquid water to exist, crucial for life as we know it.",
+"Earth is the only planet not named after a deity. The name 'Earth' comes from Old English and Germanic words meaning 'ground' or 'soil.'",
+"The planet's rotation is counterclockwise, causing the Sun to appear to rise in the east and set in the west.",
+"Earth's atmosphere scatters sunlight, making the sky appear blue. During sunrise and sunset, the longer path through the atmosphere gives a reddish hue.",
+"The Earth has a liquid outer core made of molten iron and nickel, contributing to its magnetic field.",
+"The highest recorded temperature on Earth is 134 degrees Fahrenheit (56.7 degrees Celsius) in Furnace Creek Ranch, California.",
+"Lake Baikal in Siberia is the deepest freshwater lake on Earth, reaching a depth of about 5,387 feet (1,642 meters).",
+"The Earth is not a perfect sphere but an oblate spheroid, slightly flattened at the poles and bulging at the equator due to its rotation.",
+"There are more than 3 trillion trees on Earth, roughly 422 trees per person.",
+"The Earth's atmosphere extends about 560 kilometers (348 miles) above sea level, but most weather events occur in the troposphere, the lowest layer."
+]
+},
+{"tag": "Measurements-Earth-1",
+"patterns": ["How big is the Earth's Diamater in metres", "How big is the Earth's Diamater in kilometres", "How big is the Earth's Diamater in feet", "How big is the Earth' Diamater in Miles", "What about the Earth's Diameter?"],
+"responses": ["The Earth's Diameter is 12,742 kilometres, which in metres is 12, 742, 000 metres. In feet and Miles, the Earth's Diameter is 7918 miles or 41,732,032 feet"]
+},
+
+{"tag": "Measurements-Earth-2",
+"patterns": ["How big is the Earth's Circumference in metres", "How big is the Earth's Circumference in kilometres", "How big is the Earth's Circumference in feet", "How big is the Earth' Circumference in Miles", "What about the Earth's Circumference?"],
+"responses": ["The Earth's Circumference is approxiametly 40,075 kilometres, which in metres is 40, 075, 000 metres. In feet and Miles, the Earth's Circumference is 24, 901 miles or roughly 131, 478, 000 feet"]
+},
+{
+    "tag": "earth-distance-to-planets-au",
+    "patterns": [
+      "What is the distance from Earth to Mercury in Astronomical Units?",
+      "Earth's distance to Venus in AU",
+      "How far is Earth from Mars in Astronomical Units?",
+      "Distance between Earth and Jupiter in AU",
+      "Astronomical Units to Saturn from Earth",
+      "Earth's distance to Uranus in AU",
+      "How many Astronomical Units is Earth from Neptune?",
+      "Distance from Earth to Pluto in AU"
+    ],
+    "responses": [
+      "The average distance from Earth to Mercury is approximately 0.39 AU.",
+      "Earth's average distance to Venus is around 0.72 AU.",
+      "The distance from Earth to Mars is approximately 1.52 AU on average.",
+      "Earth is about 5.20 AU away from Jupiter on average.",
+      "Saturn is around 9.58 AU from Earth on average.",
+      "The average distance from Earth to Uranus is about 19.22 AU.",
+      "Neptune is approximately 30.05 AU away from Earth on average.",
+      "Earth's average distance to Pluto is around 39.48 AU."
+    ]
+  },
+
+  {
+    "tag": "earth-distance-to-planets",
+    "patterns": [
+      "What is the distance from Earth to Mercury in kilometers?",
+      "How far is Earth from Venus in miles?",
+      "Distance between Earth and Mars in meters",
+      "Earth's distance to Jupiter in kilometers",
+      "Miles to Saturn from Earth",
+      "Earth's distance to Uranus in meters",
+      "How many kilometers is Earth from Neptune?",
+      "Distance from Earth to Pluto in miles"
+    ],
+    "responses": [
+      "The average distance from Earth to Mercury is approximately 77 million kilometers.",
+      "Earth's average distance to Venus is around 41 million miles.",
+      "The distance from Earth to Mars is approximately 225 million kilometers on average.",
+      "Earth is about 778 million kilometers away from Jupiter on average.",
+      "Saturn is around 1.4 billion miles from Earth on average.",
+      "The average distance from Earth to Uranus is about 2.9 billion meters.",
+      "Neptune is approximately 4.5 billion kilometers away from Earth on average.",
+      "Earth's average distance to Pluto is around 3 billion miles."
+    ]
+  },
+
+  {
+    "tag": "unsupported-query",
+    "patterns": [
+      "What is the distance from Earth to Alpha Centauri?",
+      "How far is Earth from Andromeda Galaxy?",
+      "How far is Earth from the exoplanets outside our solar system.",
+      "Distance from Earth to the nearest star outside the solar system."
+    ],
+    "responses": [
+      "I'm sorry, but I cannot provide information on objects outside our solar system due to the current code's complexity. However, I can help you with questions about our solar system!",
+      "Unfortunately, the code doesn't support queries about objects outside our solar system. Feel free to ask about planets within our solar system for more information."
+    ]
+  },
+
+  {
+    "tag": "earth-history",
+    "patterns": [
+      "Tell me about the history of Earth.",
+      "How old is the Earth?",
+      "What were the major events in Earth's history?",
+      "Explain Earth's geological timeline.",
+      "How has Earth evolved over time?",
+      "provide more information about the Earth's history",
+      "further on explain about the Earth's history?"
+    ],
+    "responses": [
+      "The history of Earth spans over 4.5 billion years. It is divided into different geological eras, each marked by distinct events.",
+      "Around 4.5 billion years ago, Earth formed from the dust and gas surrounding the young Sun.",
+      "The Hadean Eon was characterized by intense heat and frequent asteroid impacts, shaping the early Earth.",
+      "During the Archean Eon, life is believed to have originated in the form of simple microorganisms.",
+      "The Proterozoic Eon saw the emergence of complex multicellular life forms, including early algae and animals.",
+      "The Paleozoic Era witnessed the development of marine life, plants, and the first vertebrates on land.",
+      "The Mesozoic Era is often referred to as the 'Age of Dinosaurs,' with diverse reptiles dominating the land.",
+      "The Cenozoic Era, which began around 66 million years ago, is marked by the rise of mammals and the evolution of Homo sapiens.",
+      "Human civilization emerged relatively recently, with the last 10,000 years witnessing the development of agriculture, written language, and technological advancements.",
+      "Earth's history is a complex tapestry of geological, climatic, and biological changes, leading to the diverse planet we know today."
+    ]
+  },
+
+  {
+    "tag": "earth-galactic-position",
+    "patterns": [
+      "Tell me about Earth's position in the Milky Way.",
+      "What is the duration of Earth's orbit around the Sun?",
+      "Explain the distance of Earth from the Sun in kilometers.",
+      "How fast does Earth travel in its orbit?",
+      "How fast is the Milky Way galaxy rotating?",
+      "What is the Milky Way's size and structure?"
+    ],
+    "responses": [
+      "Earth is located in the Milky Way galaxy, part of a spiral arm known as the Orion Arm or Local Spur.",
+      "Earth's orbit around the Sun takes approximately 365.25 days, defining one Earth year.",
+      "The average distance from Earth to the Sun is about 149.6 million kilometers, a value known as an Astronomical Unit (AU).",
+      "In meters, Earth is approximately 149.6 billion meters away from the Sun on average.",
+      "Earth travels at an average speed of about 107,226 kilometers per hour (66,616 miles per hour) in its orbit around the Sun.",
+      "The Milky Way galaxy is vast, with a diameter of about 100,000 light-years and containing billions of stars, including our Sun.",
+      "The Milky Way rotates, and it takes Earth approximately 225-250 million years to complete one orbit around the galactic center."
+    ]
+  }
+  
+  
+  
+  
+
+
+
+
+    ]
+      
+          }
+          
+          
+
+          
+          
+
+      
+      
+
+  
